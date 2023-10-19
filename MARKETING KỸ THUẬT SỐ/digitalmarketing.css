@@ -15,7 +15,7 @@ body {
 
 .header {
     /* Tạo hiệu ứng nền gradient và hình ảnh nền cho header. */
-    background-image: linear-gradient(to right bottom, rgba(142, 158, 252, 0.8), rgba(28, 62, 255, 0.8)), url("../img/background1-small.jpg");
+    background-image: linear-gradient(to right bottom, rgba(142, 158, 252, 0.8), rgba(28, 62, 255, 0.8)), url("/MARKETING KỸ THUẬT SỐ/img/background1-small.png");
     background-size: cover;
     background-position: top;
     /* Đặt chiều cao và hình dạng của header. */
