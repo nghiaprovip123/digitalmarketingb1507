@@ -1,0 +1,213 @@
+
+/* 1rem = 16px */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* tạo tiêu chuẩn cho box là border box, và reset lại margin và padding cho web để thuận tiện việc code css */
+}
+
+body {
+    margin: 30px;
+    /* Tạo khoảng lề 30px ở bên ngoài của trang. */
+
+}
+
+.header {
+    /* Tạo hiệu ứng nền gradient và hình ảnh nền cho header. */
+    background-image: linear-gradient(to right bottom, rgba(142, 158, 252, 0.8), rgba(28, 62, 255, 0.8)), url("../img/background1-small.jpg");
+    background-size: cover;
+    background-position: top;
+    /* Đặt chiều cao và hình dạng của header. */
+    position: relative;
+    height: 95vh;
+    /* Sử dụng clip-path để tạo hình elip. */
+    -webkit-clip-path: ellipse(60% 60% at 50% 33%);
+    clip-path: ellipse(60% 60% at 50% 33%);
+}
+
+.header__text-box {
+    /* Định vị vị trí và căn chỉnh văn bản trong header. */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.header__logo {
+    /* Đặt kích thước của logo. */
+    height: 70px;
+}
+
+.header__logo-box {
+    /* Định vị vị trí của hộp chứa logo. */
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.heading-primary {
+    /* Định dạng tiêu đề chính. */
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+
+.heading-primary--main {
+    /* Định dạng phần chính của tiêu đề chính. */
+    display: block;
+    font-size: 62px;
+    font-weight: 400;
+    letter-spacing: 15px;
+}
+
+.heading-primary--sub {
+    /* Định dạng phần phụ của tiêu đề chính. */
+    display: block;
+    font-size: 20;
+    font-weight: 700;
+    letter-spacing: 18;
+}
+
+.btn {
+    text-transform: uppercase;
+    /* Định dạng nút. */
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    font-size: 16px;
+    position: relative;
+    transition: all .2s;
+    color: #777777;
+    background-color: #fff;
+}
+
+.btn:hover {
+    /* Thực hiện chuyển động khi di chuột qua nút. */
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* /////////////// */
+.section-about {
+    /* Định dạng phần "about" của trang. */
+    background-color: #f7f7f7;
+    padding: 250px 0;
+    margin-top: -250px;
+    text-align: center;
+}
+
+.heading-secondary {
+    /* Định dạng tiêu đề phụ. */
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    letter-spacing: 2px;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #8e9efc, #1c3eff);
+    color: transparent;
+    -webkit-background-clip: text;
+    margin-bottom: 25px;
+}
+
+.paragraph {
+    /* Định dạng đoạn văn bản. */
+    font-size: 16px;
+}
+
+.heading-tertiary {
+    /* Định dạng tiêu đề phụ khác. */
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.composition {
+    /* Định dạng phần chứa hình ảnh. */
+    margin-top: 20px;
+}
+
+.composition img {
+    /* Định dạng hình ảnh trong phần chứa. */
+
+    width: 33%;
+}
+
+.btn-text {
+    /* Định dạng nút . */
+    color: #5a73fc;
+    margin: 0 50px;
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px solid #5a73fc;
+    padding: 3px;
+    font-size: 16px;
+    transition: all .2s;
+    margin-bottom: 20px;
+    !important
+}
+
+.btn-text:hover {
+    /* Thực hiện chuyển động khi di chuột qua nút */
+    background-color: #5a73fc;
+    color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-20px);
+}
+
+.footer {
+    background-color: #333;
+    padding: 160px 0;
+    font-size: 1.4rem;
+    color: #f7f7f7;
+    text-align: center;
+}
+.footer__logo-box {
+    text-align: center;
+    margin-bottom: 8rem;
+}
+.footer__logo {
+    width: 20rem;
+    height: auto;
+}
+
+.footer__navigation {
+    border-top: 1px solid #f7f7f7;
+    padding-top: 2rem;
+    display: inline-block;
+}
+.footer__list {
+    list-style: none;
+}
+
+.footer__item {
+    display: inline-block;
+}
+
+.footer__item:not(:last-child) {
+    margin-right: 1.5rem;
+}
+
+.footer__link
+{
+    color: #f7f7f7;
+    background-color: #333;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5rem;
+    transition: all .2s;
+}
+
+.footer__link:hover{
+    color: #5a73fc;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+    transform: rotate(5deg) scale(1.05);
+}
+.footer__title {
+    display: block;
+    color: #5a73fc;
+}

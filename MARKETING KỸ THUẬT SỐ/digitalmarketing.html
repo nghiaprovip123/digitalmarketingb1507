@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Mục đích của phần này là đặt thông tin về trang web, bao gồm ký tự, viewport và các tài nguyên bên ngoài. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/digitalmarketing.css" />
+    <!--Add this-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <!--Add this-->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!--Add this-->
+    <title>WEBSITE | DIGITAL MARKETING</title>
+</head>
+
+<body>
+    <!-- Mục đích của phần này là hiển thị nội dung trang web. -->
+    <!-- html dành cho header -->
+    <!-- đặt class cho thẻ header -->
+    <header class="header">
+        <!-- bắt đầu chia nhóm để thực hiện kế thừa, bao gồm 2 nhóm là logo và nội dung cơ bản của header -->
+        <div class="header__logo-box">
+            <img src="./img/logooutline.png" class="header__logo" alt="logo">
+        </div>
+        <div class="header__text-box">
+            <h3 class="heading-primary">
+                <!-- đánh dấu thành tố nội tuyền theo cấp là phần tử con của heading-primary với ý đồ là chữ to nên đặt là main -->
+                <span class="heading-primary--main">
+                    selftaught
+                </span>
+                <!-- đánh dấu thành tố nội tuyền theo cấp là phần tử con của heading-primary với ý đồ là chữ nhỏ nên đặt là sub -->
+                <span class="heading-primary--sub">
+                    i'm learning digital marketing on my own
+                </span>
+            </h3>
+            <!-- đây là nút button -->
+            <a href="https://www.youtube.com/watch?v=sGDajJ2T4OY" class="btn">See our courses on Youtube</a>
+        </div>
+    </header>
+    <section class="section-about">
+        <div class="u-center-text u-margin-bottom-big">
+            <h2 class="heading-secondary">
+                story about us
+            </h2>
+        </div>
+        <!-- Phần này có mục đích để hiển thị tiêu đề phụ để mô tả nội dung chính của trang. -->
+        <h3 class="heading-tertiary ">
+            from zero to hero
+        </h3>
+        <p class="paragraph">
+            <!-- Nơi để đặt nội dung chính của trang web hoặc ứng dụng. -->
+            Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit.
+            Fuga cumque autem officiis distinctio,
+            voluptate qui minima.
+            Magnam tenetur suscipit eius beatae dolore nihil
+            repudiandae atque vero,
+            rem, labore ullam ipsa incidunt enim id necessitatibus at dolor! Incidunt sequi nihil amet.
+        </p>
+        <!-- Phần này có mục đích để hiển thị tiêu đề phụ để mô tả nội dung chính của trang. -->
+        <h3 class="heading-tertiary">
+            master your skills
+        </h3>
+        <p class="paragraph">
+            Lorem ipsum dolor sit amet,
+            consectetur adipisicing elite.
+        </p>
+        <div class="composition">
+            <!-- Đây là một phần có thể chứa hình ảnh -->
+            <img src="./img/humangroups1.jpg" alt="photo1" class="composition__photo composition__photo--p1">
+            <img src="./img/humangroups2.jpg" alt="photo2" class="composition__photo composition__photo--p2">
+            <img src="./img/humangroups3.jpg" alt="photo3" class="composition__photo composition__photo--p3">
+        </div>
+        <!-- Liên kết đến trang khác nhưng ở đây để tạo chú thích cho phần nhúng google -->
+        <a href="#" class="btn-text">Our Address &rarr;</a>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.6549563041754!2d106.66578307495726!3d10.761053189386752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ee4595019ad%3A0xf2a1b15c6af2c1a6!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBLaW5oIHThur8gVFAuIEjhu5MgQ2jDrSBNaW5oIChDxqEgc-G7nyBCKQ!5e0!3m2!1svi!2s!4v1697204374007!5m2!1svi!2s"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+</body>
+<!-- ĐÂY LÀ ĐOẠN MÃ HTML DÀNH CHO FOOTER CỦA TRANG WEB -->
+<footer class="footer">
+    <div class="footer__logo-box">
+        <!-- đánh dấu hình ảnh -->
+        <picture>
+            <img srcset="./img/logopng.png 1x" class="footer__logo">
+        </picture>
+        <!-- đánh dấu tựa đề -->
+        <h3 class="heading-secondary footer__title">
+            SelfTaught
+        </h3>
+    </div>
+    <div class="footer__navigation">
+        <ul class="footer__list">
+            <li class="footer__item">
+                <a href="#" class="footer__link">Address</a>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__link">Contacts</a>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__link">Policy</a>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__link">Sponsors</a>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+</html>
